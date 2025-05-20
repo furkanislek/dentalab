@@ -33,9 +33,9 @@ const WhyChooseUs = () => {
     <section className=" px-4 flex flex-col items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
         <div className="text-center mb-10 md:mb-16">
-          <span className="inline-block bg-indigo-100 text-indigo-600 px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium">
+          <button className="hover:bg-light-blue hover:text-indigo-600 shadow-md  hover:shadow-xl transition-all duration-300 inline-block bg-bgLight text-indigo-600 px-4 sm:px-6 py-2 rounded-md text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             WHY CHOOSE US
-          </span>
+          </button>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 md:mt-6 text-[#1C295D] px-4 md:px-0">
             <span className="block md:inline">
               Empowering you to take control

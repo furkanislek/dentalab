@@ -22,7 +22,7 @@ const About = () => {
           Connect with top dentists anytime for expert advice and hassle free{" "}
           appointments. Get started today and smile brighter tomorrow.
         </p>
-        <button className="bg-button text-white px-4 py-2 mt-8 rounded-md shadow-2xl">
+        <button className="hover:bg-light-blue shadow-md  hover:shadow-xl transition-all duration-300 inline-block bg-button text-white px-4 sm:px-6 py-2 rounded-md xl:text-xl text-sm font-medium my-4 sm:mb-6">
           Get Started
         </button>
       </div>

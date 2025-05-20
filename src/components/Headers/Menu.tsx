@@ -48,7 +48,6 @@ const Menu = () => {
 
   return (
     <>
-      {/* Masaüstü Menü */}
       <div className="hidden md:flex justify-between items-center max-w-[80vw] mx-auto">
         <div className="flex items-center gap-2">
           <Image src="/svg/icon.svg" alt="logo" width={100} height={100} />
@@ -63,7 +62,7 @@ const Menu = () => {
         </div>
         <div className="flex text-xl items-center gap-8">{menuLinks}</div>
         <div>
-          <button className="bg-bgLight font-semibold   text-[#685CD3] px-4 py-2 rounded-2xl hover:bg-bgLightHover hover:transition-all duration-300 hover:opacity-80">
+          <button className="bg-bgLight font-semibold   text-[#685CD3] px-4 py-2 rounded-md hover:bg-bgLightHover hover:transition-all duration-300 hover:opacity-80">
             Download
           </button>
         </div>
