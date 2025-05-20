@@ -23,7 +23,7 @@ const AppointmentCard: React.FC<AppointmentCardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white rounded-xl max-h-fit shadow-md p-4 max-w-md min-w-[320px] flex flex-col gap-2 relative ${rotate}`}
+      className={`bg-white hover:scale-105 transition-all duration-300 hover:shadow-xl  rounded-xl max-h-fit shadow-md p-4 max-w-md min-w-[320px] flex flex-col gap-2 relative ${rotate}`}
     >
       <div className="flex items-start gap-3">
         <img

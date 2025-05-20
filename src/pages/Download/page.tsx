@@ -15,7 +15,7 @@ const DownloadPage = () => {
           By downloading the app, you can easily book appointments, access
           online consultations with dentists.{" "}
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-start flex-col gap-4 md:flex-row">
           <Image src="/svg/google.svg" alt="Google" width={170} height={51} />
           <Image
             src="/svg/appstore.svg"
