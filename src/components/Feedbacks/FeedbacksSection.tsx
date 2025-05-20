@@ -117,10 +117,10 @@ const FeedbacksSection = () => {
 
   return (
     <div className="relative pb-12" ref={sectionRef}>
-      <div className="md:hidden absolute left-10 top-0 bottom-0 w-1 bg-gray-200 z-10 h-full">
+      <div className="md:hidden absolute left-10 top-0 bottom-0 w-0.5 bg-gray-200 z-10 h-full">
         <div
           ref={indicatorRef}
-          className="absolute w-1 bg-indigo-600 transition-all duration-300"
+          className="absolute w-0.5 bg-indigo-600 transition-all duration-300"
           style={{
             top: `${activeIndex * (100 / feedbacks.length)}%`,
             height: `${Math.min(33, 100 / feedbacks.length)}%`,
@@ -147,8 +147,8 @@ const FeedbacksSection = () => {
             }}
             className={`flex flex-col justify-between pb-8 ${
               activeIndex === index
-                ? "opacity-100 scale-100"
-                : "opacity-70 scale-95 hover:opacity-90 hover:scale-100"
+                ? "opacity-100 scale-95 hover:opacity-90 hover:scale-100"
+                : "opacity-100 scale-95 hover:opacity-90 hover:scale-100"
             } transition-all duration-300 cursor-pointer`}
             data-index={index}
             onClick={() => handleCardClick(index)}

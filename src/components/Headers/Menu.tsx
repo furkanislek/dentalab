@@ -48,7 +48,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="hidden md:flex justify-between items-center max-w-[80vw] mx-auto">
+      <div className="hidden lg:flex justify-between items-center max-w-[80vw] mx-auto">
         <div className="flex items-center gap-2">
           <Image src="/svg/icon.svg" alt="logo" width={100} height={100} />
           <div>
@@ -60,15 +60,15 @@ const Menu = () => {
             </span>
           </div>{" "}
         </div>
-        <div className="flex text-xl items-center gap-8">{menuLinks}</div>
+        <div className="flex text-md font-semibold items-center gap-8">{menuLinks}</div>
         <div>
-          <button className="bg-bgLight font-semibold   text-[#685CD3] px-4 py-2 rounded-md hover:bg-bgLightHover hover:transition-all duration-300 hover:opacity-80">
+          <button className="bg-bgLight font-semibold text-md  text-[#685CD3] px-4 py-2 rounded-md hover:bg-bgLightHover hover:transition-all duration-300 hover:opacity-80">
             Download
           </button>
         </div>
       </div>
       {/* Mobil Menü */}
-      <div className="flex md:hidden justify-between items-center px-4 py-2">
+      <div className="flex lg:hidden justify-between items-center px-4 py-2">
         <div className="flex items-center gap-2">
           <Image src="/svg/icon.svg" alt="logo" width={50} height={50} />
           <div>

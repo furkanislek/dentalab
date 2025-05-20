@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
                 />
               </div>
 
-              <div className="md:absolute md:bottom-0 md:left-24 w-full sm:mt-10  max-w-xs mx-auto md:mx-0 mb-14">
+              <div className="md:absolute md:bottom-0 lg:left-24 w-full sm:mt-10  max-w-xs mx-auto md:mx-0 mb-14">
                 <AppointmentCard
                   address="Medical Clinic"
                   name="drg. Kiandra Saftri"
@@ -96,9 +96,9 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start w-full md:w-1/2 order-1 md:order-2">
-            <div className="bg-indigo-100 text-indigo-600 px-4 sm:px-6 py-2 rounded-md text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+            <button className="hover:bg-light-blue hover:text-indigo-600 shadow-md  hover:shadow-xl transition-all duration-300 inline-block bg-bgLight text-indigo-600 px-4 sm:px-6 py-2 rounded-md text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               SCHEDULE
-            </div>
+            </button>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#1C295D] text-center md:text-left">
               <span className="block">Schedule of</span>
               <span className="block">Appointments</span>

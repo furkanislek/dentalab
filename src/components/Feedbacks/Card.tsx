@@ -10,9 +10,7 @@ interface FeedbackCardProps {
 const Card: React.FC<FeedbackCardProps> = ({ image, name, comment }) => {
   return (
     <div className="bg-white shadow-md  hover:shadow-xl transition-all duration-300 rounded-lg p-6 relative max-w-md">
-      <div className="absolute top-4 right-4 text-indigo-100 text-5xl font-serif">
-        ""
-      </div>
+     
 
       <div className="flex flex-col space-y-3">
         <div className="flex items-center space-x-3">
