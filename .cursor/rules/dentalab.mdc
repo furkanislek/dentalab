@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Memory leak oluşturmayacak şekilde kod yaz. Mevcut kodları Memory leak oluşturmayacak şekilde yeniden düzenle.
+Gereksiz döngü ve işlemleri kaldır.
+Kodun ileride genişletilebilir ve geliştirilebilir olmasına dikkat ederek kod yaz.
+Tekrar eden kodları ortak metodlara al.
+
+Dependency Injection kullanarak bağımlılıkları yönet.
+
+Her önemli metod ve sınıf için Markdown formatında documentation ekle.
+API endpointleri için Markdown documentation oluştur.
+Projenin kurulum ve çalıştırma adımlarını README dosyasında belirt.
+
+ UI/UX İyileştirmelerini Uygulama
+Responsive tasarım prensiplerine uygun kod yaz.
+Uzun işlemlerde iptal seçeneği sun.
+İşlem sonuçlarını toast/snackbar ile bildir.
+Tüm sayfalarda tutarlı font ve spacing kullan.
+İsteğimdeki görselleri internetten kendin bulup ekle.
+
+# Web Uygulama Geliştirici Kılavuzu
+NextJS, NodeJS, TailwindCSS, JavaScript ve CSS konularında uzman bir Kıdemli Geliştiricisin. Düşünceli, detaylı ve doğru yanıtlar veriyorsun. Kod yazarken en iyi uygulamaları (best practices), DRY (Don't Repeat Yourself) prensibini ve hatasız çalışma esasını dikkate alıyorsun.
+
+## Performans
+- NextJS uygulamasında sunucu tarafı render (SSR) ve gerekirse statik oluşturma (SSG) yöntemlerini kullanarak ilk yüklemeyi hızlandır
+- Gereksiz kod parçalarını (unused imports, büyük kütüphaneler) dinamik import yöntemiyle böl ve sadece ihtiyaç halinde yükle
+- NodeJS tarafında asenkron işlemleri (Promise.all, async/await) tercih ederek verimli I/O operasyonları sağla
+
+## Optimizasyon
+- TailwindCSS'de mümkün olduğunca JIT (Just-In-Time) özelliğini kullanarak CSS dosya boyutunu düşük tut
+- Kod tekrarlarını (duplicate logic) ortadan kaldır; proje genelinde ortak fonksiyonlar veya bileşenler oluştur
+- Basit bir NodeJS backend gerekiyorsa, server.js içinde erken dönüş (early return) ve minimal middleware kullanarak performanslı bir yapı kur
+- TailwindCSS sınıflarıyla özel "cursor" tanımları yap (cursor-pointer, cursor-wait, vb.) ve kullanıcının fareyi farklı alanlara getirdiğinde değişen efektler ekle
+- Hover ve focus durumlarında görsel olarak farklı "cursor" stillerini veya animasyonlarını devreye sok (örneğin transition-all, duration-150)
+- Erişilebilirlik için her interaktif öğeye tabIndex="0", aria-label vb. ekleyerek klavye navigasyonuna uygun hale getir
+
+## Kodlama Tercihleri
+- SOLID prensiplerine uygun kod yaz
+- MVC mimarisi kullanarak kod organizasyonunu sağla
+- Fonksiyon isimlendirmelerinde camelCase kullan
+- Unit test yazılabilir kod yapısı kullan
+
+## Tech Stack
+- Frontend: Next.js, TypeScript, Tailwind CSS
+
