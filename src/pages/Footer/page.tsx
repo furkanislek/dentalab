@@ -7,9 +7,9 @@ const FooterPage = () => {
     <footer className="bg-white pt-12 pb-6 border-t border-gray-100">
       <div className="container mx-auto px-4">
         {/* Ana içerik - masaüstünde yatay, mobilde dikey */}
-        <div className="flex flex-col lg:flex-row lg:justify-between mb-10">
+        <div className="flex flex-col lg:min-w-[85vw] lg:flex-row lg:justify-between   mb-10">
           {/* Logo ve açıklama bölümü */}
-          <div className="mb-8 flex lg:block items-center lg:mb-0">
+          <div className="mb-8 flex lg:block items-center max-w-[70vw] mx-auto lg:mx-0 lg:mb-0">
             <div className="flex items-center">
               <div>
                 <Image
@@ -31,7 +31,7 @@ const FooterPage = () => {
           </div>
 
           {/* Menüler - masaüstünde yan yana */}
-          <div className="grid grid-cols-3 gap-12 lg:gap-16 mx-auto">
+          <div className="grid  grid-cols-3 gap-12 lg:gap-16 mx-auto">
             {/* Kaynaklar */}
             <div>
               <h3 className="text-gray-800 font-medium mb-4">Resource</h3>
