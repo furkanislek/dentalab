@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   keywords: "dental, klinik, uygulama, yönetim, diş hekimi",
   authors: [{ name: "DentaLab Ekibi" }],
   viewport: "width=device-width, initial-scale=1",
+  icons: {
+    icon: "/svg/icon.svg",
+  },
 };
 
 export default function RootLayout({
