@@ -31,7 +31,7 @@ const FooterPage = () => {
           </div>
 
           {/* Menüler - masaüstünde yan yana */}
-          <div className="grid grid-cols-3 gap-36 lg:gap-16 mx-auto">
+          <div className="grid grid-cols-3 gap-12 lg:gap-16 mx-auto">
             {/* Kaynaklar */}
             <div>
               <h3 className="text-gray-800 font-medium mb-4">Resource</h3>
