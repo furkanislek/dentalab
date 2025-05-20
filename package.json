@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "optimize-svg": "node scripts/optimize-svgs.js",
+    "optimize": "npm run optimize-svg && next build"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "next": "15.3.2",
+    "react-intersection-observer": "^9.5.3",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "typescript": "^5",

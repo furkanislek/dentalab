@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -6,8 +6,16 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-plus-jakarta",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
+  preload: true,
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 2,
+  themeColor: "#0ea5e9",
+};
 
 export const metadata: Metadata = {
   title: "DentaLab - Dental Klinik Yönetim Uygulaması",
@@ -15,7 +23,6 @@ export const metadata: Metadata = {
     "Dental klinik yönetimi için modern ve kullanıcı dostu bir uygulama",
   keywords: "dental, klinik, uygulama, yönetim, diş hekimi",
   authors: [{ name: "DentaLab Ekibi" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/svg/icon.svg",
   },
@@ -28,6 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="scroll-smooth">
+      <head>
+        <link rel="preload" href="/photos/bg.png" as="image" type="image/png" />
+      </head>
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased min-h-screen flex flex-col`}
       >

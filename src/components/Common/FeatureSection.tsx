@@ -1,9 +1,20 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import SectionTitle from "./SectionTitle";
 import ReadMoreLink from "./ReadMoreLink";
+
+// LazyImage bileşenini dinamik olarak import et
+const LazyImage = dynamic(() => import("./LazyImage"), {
+  loading: () => (
+    <div
+      className="h-full w-full bg-gray-200 animate-pulse rounded-lg"
+      style={{ aspectRatio: "1/1" }}
+    />
+  ),
+  ssr: true,
+});
 
 interface FeatureSectionProps {
   badge: string;
@@ -30,6 +41,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   bgColor = "",
   children,
 }) => {
+  // SVG dosyaları için görüntü kalitesini ve önceliklendirmeyi ayarla
+  const isSvg = imageSrc.endsWith(".svg");
+
   return (
     <section
       className={`py-16 md:py-24 px-4 relative overflow-hidden ${bgColor}`}
@@ -42,13 +56,15 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
             } relative mb-10 md:mb-0`}
           >
             <div className="relative w-full h-full">
-              <Image
+              <LazyImage
                 src={imageSrc}
                 alt={imageAlt}
                 width={600}
                 height={600}
-                className="w-full h-auto relative z-10"
-                priority
+                className="w-full h-auto relative z-10 rounded-lg"
+                priority={imageRight === false} // Soldaki resimler için öncelik ver
+                quality={isSvg ? 100 : 80} // SVG olmayan dosyalar için kaliteyi azalt
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
